@@ -1,63 +1,99 @@
-.sidenav {
-    height: 100%; 
-    width: 250px; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0;
+.sidenav { 
     overflow-x: hidden; 
     padding-top: 20px;
-    background: #062863;
+    background: #062863;  
+    left: 0;  
+}
 
+
+@media screen and (max-width : 700px) {
+    .sidenav{
+        position: fixed; 
+        z-index: 1; 
+        bottom: 0; 
+        display: grid;
+        width: 100%;        
+    }
+
+    .navMid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+        justify-items: center;
+    }
+
+    .sidenav a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+    #savings{
+        position: relative;
+        bottom: 5px;
+    }
     
+    .navTop{
+        display: none;
+    }
+
+    .navEnd{
+        display: none;
+    }
+
 }
 
-.sidenav a{
-    display : grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: auto 1fr;
-    color: #efefef;
-    text-decoration: none;
-    align-items: center;  
-    column-gap: 25px;  
+@media screen and (min-width : 700px) {
+    .sidenav{
+        height: 100%;
+        width: 250px; 
+        position: fixed; 
+        z-index: 1; 
+        top: 0; 
+        
+    }
+    .navEnd{
+        position: absolute;
+        bottom: 40px;
+    }
+    #savings{
+        margin-left: 30px;
+    }
     
-}
-
-.navEnd{
-    position: absolute;
-    bottom: 40px;
-}
-
-.navTop{
-    position: relative;
-    top: 20px;
-}
-
-
-
-.navMid{
-    position: relative;
-    top: 60px;
-}
-
-.navMid a{
-    margin: 15px 0;    
-}
-
-.sidenav a{
-    margin-left: 10px;
-}
-
-#savings{
-    margin-left: 30px;
-}
-
-#savings div{
-    background-color: white;
-    color: #062863 ;
-    padding: 5px 15px;
-    border-top-left-radius: 10px ;
-    margin-right: 100px;
-    border-bottom-right-radius: 10px ;
-    border-top-right-radius: 10px ;
+    #savings div{
+        background-color: white;
+        color: #062863 ;
+        padding: 5px 15px;
+        border-top-left-radius: 10px ;
+        margin-right: 100px;
+        border-bottom-right-radius: 10px ;
+        border-top-right-radius: 10px ;
+    }
+    
+    .navTop{
+        position: relative;
+        top: 20px;
+    }
+    
+    .navMid{
+        position: relative;
+        top: 60px;
+    }
+    
+    .navMid a{
+        margin: 15px 0;    
+    }
+    
+    .sidenav a{
+        margin-left: 10px;
+    }
+    .sidenav a{
+        display : grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto 1fr;
+        color: #efefef;
+        text-decoration: none;
+        align-items: center;  
+        column-gap: 25px;     
+    }
 }
