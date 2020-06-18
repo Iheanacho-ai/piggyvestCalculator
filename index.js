@@ -79,7 +79,7 @@ document.getElementById("submitPiggy").onclick = (e) => {
   let amount = parseInt(document.getElementById("amountPiggy").value);
 
   let interest = amount * Math.pow(1 + 0.1 / obj[valY], obj[valY] * obj[valX]);
-  document.getElementById("balance").textContent = parseInt(interest);
+  document.getElementById("balance").textContent = "₦ " + parseInt(interest);
 };
 
 document.getElementById("submitSafe").onclick = (e) => {
@@ -91,7 +91,7 @@ document.getElementById("submitSafe").onclick = (e) => {
   let amount = parseInt(document.getElementById("amountSafe").value);
 
   let interest = amount * Math.pow(1 + 0.06 / obj[valY], obj[valY] * obj[valX]);
-  document.getElementById("balance").textContent = parseInt(interest);
+  document.getElementById("balance").textContent = "₦ " + parseInt(interest);
 };
 
 document.getElementById("submitTar").onclick = (e) => {
@@ -103,7 +103,7 @@ document.getElementById("submitTar").onclick = (e) => {
   let amount = parseInt(document.getElementById("amountTar").value);
 
   let interest = amount * Math.pow(1 + 0.1 / obj[valY], obj[valY] * obj[valX]);
-  document.getElementById("balance").textContent = parseInt(interest);
+  document.getElementById("balance").textContent = "₦ " + parseInt(interest);
 };
 
 document.getElementById("submitFlexN").onclick = (e) => {
@@ -115,7 +115,7 @@ document.getElementById("submitFlexN").onclick = (e) => {
   let amount = parseInt(document.getElementById("amountFlexN").value);
 
   let interest = amount * Math.pow(1 + 0.1 / obj[valY], obj[valY] * obj[valX]);
-  document.getElementById("balance").textContent = parseInt(interest);
+  document.getElementById("balance").textContent = "₦ " + parseInt(interest);
 };
 
 document.getElementById("submitFlexD").onclick = (e) => {
@@ -127,5 +127,5 @@ document.getElementById("submitFlexD").onclick = (e) => {
   let amount = parseInt(document.getElementById("amountFlexD").value);
 
   let interest = amount * Math.pow(1 + 0.1 / obj[valY], obj[valY] * obj[valX]);
-  document.getElementById("balance").textContent = parseInt(interest);
+  document.getElementById("balance").textContent = "₦ " + parseInt(interest);
 };
