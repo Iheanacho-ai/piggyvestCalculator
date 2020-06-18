@@ -89,7 +89,7 @@
               <div class="card">
                 <div class="card-body">
                   <h6 class="card-title">TOTAL BALANCE</h6>
-                  <p class="card-text" style="font-size: 40px; color: #ffa500;">
+                  <p id ='balance' class="card-text" style="font-size: 40px; color: #ffa500;">
                     ₦0.00
                   </p>
                 </div>
@@ -134,7 +134,7 @@
                             <input
                               type="text"
                               class="form-control"
-                              id="amount"
+                              id="amountPiggy"
                               placeholder="Enter amount"
                               name="amount"
                             />
@@ -155,10 +155,7 @@
                             <div class="col-lg-6">
                                 <div class="speciale">
                                     <label for="interestRate2">Calculation Period</label>
-                                <select id="period" name="period">
-                                  <option value="daily">Daily</option>
-                                  <option value="monthly">Monthly</option>
-                                  <option value="weekly">Weekly</option>
+                                <select id="periodPiggy" name="period">
                                   <option value="yearly">Yearly</option>
                                   </select>
                                 </div>
@@ -166,7 +163,7 @@
                               <div class="col-lg-6">
                                   <div class="speciale">
                                       <label for="interestRate2">Compound Interval</label>
-                                  <select id="interval" name="interval">
+                                  <select id="intervalPiggy" name="interval">
                                       <option value="dailyI">Daily</option>
                                       <option value="monthlyI">Monthly</option>
                                       <option value="weeklyI">Weekly</option>
@@ -182,7 +179,7 @@
                           
   
                           <div class="col-lg-5">
-                            <button type="submit" class="btn btn-warning">
+                            <button id="submitPiggy" class="btn btn-warning">
                               Calculate
                             </button>
                           </div>
@@ -230,9 +227,6 @@
                                 <div class="speciale">
                                     <label for="interestRate2">Calculation Period</label>
                                 <select id="period" name="period">
-                                  <option value="daily">Daily</option>
-                                  <option value="monthly">Monthly</option>
-                                  <option value="weekly">Weekly</option>
                                   <option value="yearly">Yearly</option>
                                   </select>
                                 </div>
@@ -304,9 +298,7 @@
                                 <div class="speciale">
                                     <label for="interestRate2">Calculation Period</label>
                                 <select id="period" name="period">
-                                  <option value="daily">Daily</option>
-                                  <option value="monthly">Monthly</option>
-                                  <option value="weekly">Weekly</option>
+                      
                                   <option value="yearly">Yearly</option>
                                   </select>
                                 </div>
@@ -377,9 +369,7 @@
                                 <div class="speciale">
                                     <label for="interestRate2">Calculation Period</label>
                                 <select id="period" name="period">
-                                  <option value="daily">Daily</option>
-                                  <option value="monthly">Monthly</option>
-                                  <option value="weekly">Weekly</option>
+                                  
                                   <option value="yearly">Yearly</option>
                                   </select>
                                 </div>
@@ -450,9 +440,7 @@
                                 <div class="speciale">
                                     <label for="interestRate2">Calculation Period</label>
                                 <select id="period" name="period">
-                                  <option value="daily">Daily</option>
-                                  <option value="monthly">Monthly</option>
-                                  <option value="weekly">Weekly</option>
+                      
                                   <option value="yearly">Yearly</option>
                                   </select>
                                 </div>

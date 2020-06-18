@@ -63,3 +63,21 @@ document.getElementById('flexD').onclick = () =>{
     document.getElementById('flexD').style.color = 'grey'
 }
 
+let obj ={
+    Yearly: 1,
+    Monthly: 12,
+    Weekly: 56,
+    Daily: 365
+}
+
+document.getElementById('submitPiggy').onclick = (e) => {
+    e.preventDefault();
+    let x = document.getElementById('periodPiggy');
+    let y = document.getElementById('intervalPiggy');
+    let valX = x.options[x.selectedIndex].text;
+    let valY = y.options[y.selectedIndex].text;
+    let amount = parseInt(document.getElementById('amountPiggy').value);
+
+    let interest = amount * (Math.pow((1 + 0.1/obj[valY]), (obj[valY] * obj[valX])));
+    document.getElementById('balance').textContent = interest;
+}
