@@ -9,6 +9,10 @@ body{
     max-width: 1360px; 
 }
 
+.control{
+    color:black
+}
+
 @media screen and (max-width : 1200px) {
     .sidenav{
         position: fixed; 
@@ -42,6 +46,10 @@ body{
 
     .navEnd{
         display: none;
+    }
+
+    .wallet{
+        display:none;
     }
 
 }

@@ -56,13 +56,8 @@
     <section>
         <br /><br />
         <div class="container">
-          <h3 style="float: left; color: #ffa500;">Interest Calculator</h3>
-          <img
-            src="2019.jpg"
-            alt="..."
-            class="img-circle"
-            style="float: right; width: 50px;"
-          />
+          <h3 style="float: left; color: #062863;">Interest Calculator</h3>
+          
         </div>
         <div class="container">
           <br /><br />
@@ -103,8 +98,8 @@
             <div class="col-lg-4">
               <div class="card">
                 <div class="card-body text-center">
-                  <h6 class="card-title">INTEREST RATE</h6>
-                  <p class="card-text" style="font-size: 20px; color: #ffa500;">
+                  <h6 style="color: #062863;" id="rate"  class="card-title">INTEREST RATE</h6>
+                  <p style="color: #062863;" id="showRate" class="card-text" style="font-size: 20px;">
                     10% - 15%
                   </p>
                 </div>
@@ -117,12 +112,12 @@
           <div class="col-lg-8">
             <ul class="nav nav-tabs">
               <li class="active">
-                <a data-toggle="pill" href="#piggybank">Piggybank</a>
+                <a style="color: #062863;" id="piggy" data-toggle="pill" href="#piggybank">Piggybank</a>
               </li>
-              <li><a data-toggle="pill" href="#safelock">Safelock</a></li>
-              <li><a data-toggle="pill" href="#targets">Targets</a></li>
-              <li><a data-toggle="pill" href="#flexNaira">Flex Naira</a></li>
-              <li><a data-toggle="pill" href="#flexDollar">Flex Dollar</a></li>
+              <li><a class="control" id="safe" data-toggle="pill" href="#safelock">Safelock</a></li>
+              <li><a class="control" id="tar" data-toggle="pill" href="#targets">Targets</a></li>
+              <li><a class="control" id="flexN" data-toggle="pill" href="#flexNaira">Flex Naira</a></li>
+              <li><a class="control" id="flexD" data-toggle="pill" href="#flexDollar">Flex Dollar</a></li>
             </ul>
   
             <br />
@@ -492,9 +487,11 @@
             </div>
           
         </div>
-        <div class="col-lg-4">
+        <div  class="col-lg-4 wallet">
             <img alt="..." class="img-fluid" src="images/undraw_wallet_aym5 1.png" />
           </div>
       </section>
+
+      <script src="index.js"></script>
 </body>
 </html>
