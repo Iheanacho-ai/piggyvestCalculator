@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PiggyVest</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <section>
+      <br /><br />
+      <div class="container">
+        <h3 style="float: left; color: #ffa500;">Interest Calculator</h3>
+        <img
+          src="2019.jpg"
+          alt="..."
+          class="img-circle"
+          style="float: right; width: 50px;"
+        />
+      </div>
+      <div class="container">
+        <br /><br />
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Piggybank</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Safelock</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Targets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Flex Naira</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Flex Dollar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Interest Calculator</a>
+          </li>
+        </ul>
+        <br />
+
+        <!-- <div class=""> -->
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">TOTAL BALANCE</h6>
+                <p class="card-text" style="font-size: 40px; color: #ffa500;">
+                  ₦0.00
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <h6 class="card-title">INTEREST RATE</h6>
+                <p class="card-text" style="font-size: 20px; color: #ffa500;">
+                  10% - 15%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <br />
+        <!-- <div class=""> -->
+        <div class="col-lg-8">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="pill" href="#piggybank">Piggybank</a>
+            </li>
+            <li><a data-toggle="pill" href="#safelock">Safelock</a></li>
+            <li><a data-toggle="pill" href="#targets">Targets</a></li>
+            <li><a data-toggle="pill" href="#flexNaira">Flex Naira</a></li>
+            <li><a data-toggle="pill" href="#flexDollar">Flex Dollar</a></li>
+          </ul>
+
+          <br />
+
+          <div class="tab-content">
+            <div id="piggybank" class="tab-pane fade in active">
+              <form>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="col-lg-6">
+                          <label for="amount">Amount</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="amount"
+                            placeholder="Enter amount"
+                            name="amount"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="monthlyAmount"> Monthly Amount</label>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="monthlyAmount"
+                            placeholder="0.00"
+                            name="monthlyAmount"
+                          />
+                        </div>
+                      </div>
+                      <br />
+                      <div class="col-lg-12">
+                        <div class="col-lg-6">
+                          <label for="interestRate">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="interestRate2">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate2"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-10">
+                        <br />
+                        <div class="col-lg-5"></div>
+
+                        <div class="col-lg-5">
+                          <button type="submit" class="btn btn-warning">
+                            Calculate
+                          </button>
+                        </div>
+                        <br /><br /><br />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-4" style="position: absolute; bottom: 0px; right: 0;">
+                              <img src="2019.jpg" alt="..." class="img-fluid" />
+                            
+                            </div> -->
+                </div>
+              </form>
+            </div>
+
+            <!-- </div>
+          </div> -->
+
+            <div id="safelock" class="tab-pane fade">
+                <form>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="col-lg-6">
+                          <label for="amount">Amount</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="amount"
+                            placeholder="Enter amount"
+                            name="amount"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="monthlyAmount"> Monthly Amount</label>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="monthlyAmount"
+                            placeholder="0.00"
+                            name="monthlyAmount"
+                          />
+                        </div>
+                      </div>
+                      <br />
+                      <div class="col-lg-12">
+                        <div class="col-lg-6">
+                          <label for="interestRate">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="interestRate2">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate2"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-10">
+                        <br />
+                        <div class="col-lg-5"></div>
+
+                        <div class="col-lg-5">
+                          <button type="submit" class="btn btn-warning">
+                            Calculate
+                          </button>
+                        </div>
+                        <br /><br /><br />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-4" style="position: absolute; bottom: 0px; right: 0;">
+                              <img src="2019.jpg" alt="..." class="img-fluid" />
+                            
+                            </div> -->
+                </div>
+              </form>
+            </div>
+            <div id="targets" class="tab-pane fade">
+            	              <form>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="col-lg-6">
+                          <label for="amount">Amount</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="amount"
+                            placeholder="Enter amount"
+                            name="amount"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="monthlyAmount"> Monthly Amount</label>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="monthlyAmount"
+                            placeholder="0.00"
+                            name="monthlyAmount"
+                          />
+                        </div>
+                      </div>
+                      <br />
+                      <div class="col-lg-12">
+                        <div class="col-lg-6">
+                          <label for="interestRate">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="interestRate2">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate2"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-10">
+                        <br />
+                        <div class="col-lg-5"></div>
+
+                        <div class="col-lg-5">
+                          <button type="submit" class="btn btn-warning">
+                            Calculate
+                          </button>
+                        </div>
+                        <br /><br /><br />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-4" style="position: absolute; bottom: 0px; right: 0;">
+                              <img src="2019.jpg" alt="..." class="img-fluid" />
+                            
+                            </div> -->
+                </div>
+              </form>
+            </div>
+            <div id="flexNaira" class="tab-pane fade">
+              <form>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="col-lg-6">
+                          <label for="amount">Amount</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="amount"
+                            placeholder="Enter amount"
+                            name="amount"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="monthlyAmount"> Monthly Amount</label>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="monthlyAmount"
+                            placeholder="0.00"
+                            name="monthlyAmount"
+                          />
+                        </div>
+                      </div>
+                      <br />
+                      <div class="col-lg-12">
+                        <div class="col-lg-6">
+                          <label for="interestRate">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="interestRate2">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate2"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-10">
+                        <br />
+                        <div class="col-lg-5"></div>
+
+                        <div class="col-lg-5">
+                          <button type="submit" class="btn btn-warning">
+                            Calculate
+                          </button>
+                        </div>
+                        <br /><br /><br />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-4" style="position: absolute; bottom: 0px; right: 0;">
+                              <img src="2019.jpg" alt="..." class="img-fluid" />
+                            
+                            </div> -->
+                </div>
+              </form>
+            </div>
+            <div id="flexDollar" class="tab-pane fade">
+              <form>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="col-lg-6">
+                          <label for="amount">Amount</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="amount"
+                            placeholder="Enter amount"
+                            name="amount"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="monthlyAmount"> Monthly Amount</label>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="monthlyAmount"
+                            placeholder="0.00"
+                            name="monthlyAmount"
+                          />
+                        </div>
+                      </div>
+                      <br />
+                      <div class="col-lg-12">
+                        <div class="col-lg-6">
+                          <label for="interestRate">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="interestRate2">Interest Rate</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="10% per Annum"
+                            name="interestRate2"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-10">
+                        <br />
+                        <div class="col-lg-5"></div>
+
+                        <div class="col-lg-5">
+                          <button type="submit" class="btn btn-warning">
+                            Calculate
+                          </button>
+                        </div>
+                        <br /><br /><br />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-4" style="position: absolute; bottom: 0px; right: 0;">
+                              <img src="2019.jpg" alt="..." class="img-fluid" />
+                            
+                            </div> -->
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img src="2019.jpg" alt="..." class="img-fluid" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
