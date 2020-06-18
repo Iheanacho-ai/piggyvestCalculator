@@ -79,5 +79,17 @@ document.getElementById('submitPiggy').onclick = (e) => {
     let amount = parseInt(document.getElementById('amountPiggy').value);
 
     let interest = amount * (Math.pow((1 + 0.1/obj[valY]), (obj[valY] * obj[valX])));
-    document.getElementById('balance').textContent = interest;
+    document.getElementById('balance').textContent = parseInt(interest);
+}
+
+document.getElementById('submitSafe').onclick = (e) => {
+    e.preventDefault();
+    let x = document.getElementById('periodSafe');
+    let y = document.getElementById('intervalSafe');
+    let valX = x.options[x.selectedIndex].text;
+    let valY = y.options[y.selectedIndex].text;
+    let amount = parseInt(document.getElementById('amountSafe').value);
+
+    let interest = amount * (Math.pow((1 + 0.06/obj[valY]), (obj[valY] * obj[valX])));
+    document.getElementById('balance').textContent = parseInt(interest);
 }
