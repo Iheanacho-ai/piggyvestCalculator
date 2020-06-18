@@ -93,3 +93,15 @@ document.getElementById('submitSafe').onclick = (e) => {
     let interest = amount * (Math.pow((1 + 0.06/obj[valY]), (obj[valY] * obj[valX])));
     document.getElementById('balance').textContent = parseInt(interest);
 }
+
+document.getElementById('submitTar').onclick = (e) => {
+    e.preventDefault();
+    let x = document.getElementById('periodTar');
+    let y = document.getElementById('intervalTar');
+    let valX = x.options[x.selectedIndex].text;
+    let valY = y.options[y.selectedIndex].text;
+    let amount = parseInt(document.getElementById('amountTar').value);
+
+    let interest = amount * (Math.pow((1 + 0.1/obj[valY]), (obj[valY] * obj[valX])));
+    document.getElementById('balance').textContent = parseInt(interest);
+}
